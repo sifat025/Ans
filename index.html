@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অ্যাকাউন্টিং পরীক্ষার সমাধান</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:wght@400;700&family=Hind+Siliguri:wght@400;500;600&display=swap');
+
+        body {
+            font-family: 'Hind Siliguri', 'Tiro Bangla', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        h2, h3, h4 {
+            color: #34495e;
+            text-align: center;
+        }
+        
+        h3 {
+            margin-top: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .accordion-button {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: background-color 0.4s ease;
+            margin-top: 10px;
+            border-radius: 5px;
+            position: relative;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        .accordion-button:hover {
+            background-color: #2980b9;
+        }
+        
+        .accordion-button.active {
+            background-color: #2c3e50;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .accordion-button::after {
+            content: '+';
+            font-size: 22px;
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .accordion-button.active::after {
+            content: "−";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+        
+        .panel-content {
+            padding: 20px 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+            color: #34495e;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .double-underline {
+            border-bottom: 3px double #333;
+        }
+        
+        .sub-header {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>হিসাববিজ্ঞান পরীক্ষার সম্পূর্ণ সমাধান</h1>
+        
+        <!-- From Image 2: Part A -->
+        <button class="accordion-button">প্রশ্ন নং ১ এর উত্তর (বিভাগ-ক)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <p><strong>ক. হিসাব কি? (What is an Account?)</strong><br>হিসাব হলো সাধারণ খতিয়ানের একটি বিস্তারিত বিবরণী যা কোনো নির্দিষ্ট সম্পদ, দায়, মালিকানা স্বত্ব, আয় বা ব্যয়ের লেনদেনগুলোকে আলাদা করে সংরক্ষণ করে। যেমন, "নগদান হিসাব"-এ সমস্ত নগদ আন্তঃপ্রবাহ ও বহিঃপ্রবাহ লিপিবদ্ধ করা হয়।</p>
+                <p><strong>খ. বকেয়াভিত্তিক হিসাববিজ্ঞান কি? (Define accrual-basis accounting.)</strong><br>বকেয়াভিত্তিক হিসাববিজ্ঞান হলো এমন একটি পদ্ধতি যেখানে আয় অর্জনের সাথে সাথে (নগদ প্রাপ্তি নির্বিশেষে) এবং ব্যয় সংঘটিত হওয়ার সাথে সাথে (নগদ প্রদান নির্বিশেষে) লিপিবদ্ধ করা হয়।</p>
+                <p><strong>গ. বিপরীত সম্পদের একটি উদাহরণ দাও। (Provide an example of a contra asset.)</strong><br>বিপরীত সম্পদের একটি উদাহরণ হলো <strong>পুঞ্জীভূত অবচয় (Accumulated Depreciation)</strong>। এটি স্থায়ী সম্পদের (যেমন: যন্ত্রপাতি বা দালানকোঠা) সাথে যুক্ত থাকে এবং এর ক্রেডিট ব্যালেন্স থাকে, যা সম্পদের নীট পুস্তক মূল্য হ্রাস করে।</p>
+                <p><strong>ঘ. ভুল কত প্রকার? (How many types of error?)</strong><br>হিসাববিজ্ঞানে বিভিন্ন ধরণের ভুল হতে পারে, যা প্রধানত ৪ প্রকার: <br>১. বাদ পড়ার ভুল (Errors of Omission)<br>২. লেখার ভুল (Errors of Commission)<br>৩. নীতিগত ভুল (Errors of Principle)<br>৪. পরিপূরক ভুল (Compensating Errors)</p>
+                <p><strong>ঙ. বিপরীত দাখিলা কি? (What is reversing entry?)</strong><br>বিপরীত দাখিলা হলো একটি ঐচ্ছিক জাবেদা দাখিলা, যা নতুন হিসাবকালের প্রথম দিনে দেওয়া হয়। এটি পূর্ববর্তী হিসাবকালের নির্দিষ্ট কোনো সমন্বয় দাখিলার (যেমন: বকেয়া আয় বা ব্যয়) ঠিক উল্টো দাখিলা।</p>
+                <p><strong>চ. বিশেষ জাবেদা কত প্রকার? (How many types of special journal?)</strong><br>সাধারণত চার ধরনের প্রধান বিশেষ জাবেদা রয়েছে: <br>১. বিক্রয় জাবেদা (ধারে বিক্রয়ের জন্য)<br>২. নগদ প্রাপ্তি জাবেদা (সকল নগদ প্রাপ্তির জন্য)<br>৩. ক্রয় জাবেদা (ধারে ক্রয়ের জন্য)<br>৪. নগদ প্রদান জাবেদা (সকল নগদ প্রদানের জন্য)</p>
+                <p><strong>ছ. তড়িৎ অনুপাত কি? (What is quick ratio?)</strong><br>তড়িৎ অনুপাত বা অ্যাসিড-টেস্ট অনুপাত হলো একটি তারল্য পরিমাপক যা মজুদ পণ্যের উপর নির্ভর না করে চলতি দায় পরিশোধের ক্ষমতা পরিমাপ করে। সূত্র: <br><strong>তড়িৎ অনুপাত = (চলতি সম্পদ - মজুদ পণ্য) / চলতি দায়</strong></p>
+                <p><strong>জ. সমাপনী দাখিলা কি? (What is closing entry?)</strong><br>সমাপনী দাখিলা হলো হিসাবকালের শেষে দেওয়া জাবেদা দাখিলা, যা অস্থায়ী হিসাবগুলোর (আয়, ব্যয় এবং উত্তোলন) ব্যালেন্স স্থায়ী হিসাবে (মূলধন বা সংরক্ষিত আয়) স্থানান্তর করে।</p>
+                <p><strong>ঝ. চলতি দায়ের তিনটি উদাহরণ দাও। (Give three examples of current liabilities.)</strong><br>চলতি দায়ের তিনটি উদাহরণ হলো: <br>১. প্রদেয় হিসাব (Accounts Payable)<br>২. বকেয়া বেতন (Salaries Payable)<br>৩. অনুপার্জিত আয় (Unearned Revenue)</p>
+                <p><strong>ঞ. অনিশ্চিত হিসাব কি? (What is a suspense account?)</strong><br>অনিশ্চিত হিসাব একটি অস্থায়ী সাধারণ খতিয়ান হিসাব যা রেওয়ামিল না মিললে অমিল বা অমীমাংসিত লেনদেনগুলো সাময়িকভাবে রাখার জন্য ব্যবহৃত হয়। ভুল খুঁজে পাওয়ার পর এই হিসাব থেকে সঠিক হিসাবে স্থানান্তর করা হয়।</p>
+                <p><strong>ট. রেওয়ামিল কি? (What is a trial balance?)</strong><br>রেওয়ামিল হলো একটি নির্দিষ্ট তারিখে খতিয়ানের সকল হিসাবের ডেবিট ও ক্রেডিট উদ্বৃত্তের একটি তালিকা। এর মূল উদ্দেশ্য হলো খতিয়ানের মোট ডেবিট ও মোট ক্রেডিটের গাণিতিক শুদ্ধতা যাচাই করা।</p>
+                <p><strong>ঠ. অনুপার্জিত আয় কি? (What is unearned revenue?)</strong><br>অনুপার্জিত আয় একটি দায় হিসাব, যা গ্রাহকের কাছ থেকে পণ্য বা সেবা প্রদানের আগেই নগদ অর্থ গ্রহণ করা হলে সৃষ্টি হয়। সেবা প্রদান বা পণ্য সরবরাহ করার পরেই এটি আয় হিসাবে গণ্য হয়।</p>
+            </div>
+        </div>
+        
+        <button class="accordion-button">প্রশ্ন নং ২ এর উত্তর (জনাব খালেদ)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>জনাব খালেদ</h3>
+                <h3>সাধারণ জাবেদা</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>তারিখ</th>
+                            <th>হিসাবের শিরোনাম ও ব্যাখ্যা</th>
+                            <th>খ.পৃ.</th>
+                            <th class="text-right">ডেবিট (টাকা)</th>
+                            <th class="text-right">ক্রেডিট (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>জানু ১</td>
+                            <td>
+                                নগদান হিসাব ...................................... ডেবিট<br>
+                                <span style="padding-left:20px;">খালেদ, মূলধন হিসাব ......................... ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(মালিক কর্তৃক ব্যবসায় বিনিয়োগ করা হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">১,০০,০০০</td>
+                            <td class="text-right">১,০০,০০০</td>
+                        </tr>
+                        <tr>
+                            <td>জানু ৮</td>
+                            <td>
+                                সাপ্লাইজ হিসাব .................................. ডেবিট<br>
+                                <span style="padding-left:20px;">নগদান হিসাব ................................. ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(নগদে সাপ্লাইজ ক্রয় করা হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">৭০০</td>
+                            <td class="text-right">৭০০</td>
+                        </tr>
+                        <tr>
+                            <td>জানু ১০</td>
+                            <td>
+                                ভাড়া খরচ হিসাব .............................. ডেবিট<br>
+                                <span style="padding-left:20px;">নগদান হিসাব ................................. ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(মাসিক ভাড়া প্রদান করা হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">৫,০০০</td>
+                            <td class="text-right">৫,০০০</td>
+                        </tr>
+                        <tr>
+                            <td>জানু ১২</td>
+                            <td>
+                                বিজ্ঞাপন খরচ হিসাব ............................ ডেবিট<br>
+                                <span style="padding-left:20px;">প্রদেয় হিসাব ..................................... ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(বাকিতে বিজ্ঞাপন খরচ সংঘটিত হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">১০,০০০</td>
+                            <td class="text-right">১০,০০০</td>
+                        </tr>
+                        <tr>
+                            <td>জানু ১৫</td>
+                            <td>
+                                অগ্রিম বীমা হিসাব ................................. ডেবিট<br>
+                                <span style="padding-left:20px;">নগদান হিসাব ................................. ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(এক বছরের জন্য বীমা প্রিমিয়াম প্রদান)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">৬,০০০</td>
+                            <td class="text-right">৬,০০০</td>
+                        </tr>
+                        <tr>
+                            <td>জানু ২৫</td>
+                            <td>
+                                বেতন খরচ হিসাব ................................. ডেবিট<br>
+                                <span style="padding-left:20px;">নগদান হিসাব ................................. ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(সচিবের বেতন প্রদান করা হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">৭,০০০</td>
+                            <td class="text-right">৭,০০০</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button class="accordion-button">প্রশ্ন নং ৩ এর উত্তর (টেক কম্পিউটার সার্ভিসেস)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>টেক কম্পিউটার সার্ভিসেস</h3>
+                <h3>সমন্বয় দাখিলা</h3>
+                <h4 style="border:none; margin-bottom: 20px;">৩১ জুলাই, ২০২৪ তারিখের জন্য</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>তারিখ</th>
+                            <th>হিসাবের শিরোনাম ও ব্যাখ্যা</th>
+                            <th>খ.পৃ.</th>
+                            <th class="text-right">ডেবিট (টাকা)</th>
+                            <th class="text-right">ক্রেডিট (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>জুলাই ৩১</td>
+                            <td>
+                                বেতন খরচ হিসাব ................................. ডেবিট<br>
+                                <span style="padding-left:20px;">বকেয়া বেতন হিসাব ........................... ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(কর্মচারীদের বকেয়া বেতন সমন্বয় করা হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">১,১০০</td>
+                            <td class="text-right">১,১০০</td>
+                        </tr>
+                        <tr>
+                            <td>জুলাই ৩১</td>
+                            <td>
+                                সুদ খরচ হিসাব ................................... ডেবিট<br>
+                                <span style="padding-left:20px;">বকেয়া সুদ হিসাব ............................... ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(প্রদেয় নোটের উপর এক মাসের সুদ ধার্য করা হলো)</em></span><br>
+                                <span style="padding-left:20px;"><em>(হিসাব: ২০,০০০ x ১২% x ১/১২)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">২০০</td>
+                            <td class="text-right">২০০</td>
+                        </tr>
+                        <tr>
+                            <td>জুলাই ৩১</td>
+                            <td>
+                                প্রাপ্য হিসাব ....................................... ডেবিট<br>
+                                <span style="padding-left:20px;">সেবা আয় হিসাব ............................... ক্রেডিট</span><br>
+                                <span style="padding-left:20px;"><em>(অনাদায়ী সেবা আয় সমন্বয় করা হলো)</em></span>
+                            </td>
+                            <td></td>
+                            <td class="text-right">১,৬০০</td>
+                            <td class="text-right">১,৬০০</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button class="accordion-button">প্রশ্ন নং ৫ এর উত্তর (রেওয়ামিল)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>হারানো সংখ্যাটি নির্ণয়</h3>
+                <p>হারানো সংখ্যাটি খুঁজে বের করার জন্য রেওয়ামিলের মোট ডেবিট এবং মোট ক্রেডিট সমান হতে হবে। প্রথমে, ডেবিট এবং ক্রেডিট হিসাবের তালিকা ও তাদের উদ্বৃত্তগুলো নিচে দেওয়া হলো।</p>
+                
+                <p class="sub-header">ডেবিট উদ্বৃত্ত:</p>
+                <ul>
+                    <li>প্রাপ্য হিসাব: ৯০০</li>
+                    <li>ডেলিভারি সরঞ্জাম: ১৫,৫০০</li>
+                    <li>সাপ্লাইজ: ৬০০</li>
+                    <li>বেতন খরচ: ২,০০০</li>
+                    <li>ভাড়া খরচ: ৫৫০</li>
+                    <li>নগদ: ৬,০০০</li>
+                </ul>
+                
+                <p class="sub-header">ক্রেডিট উদ্বৃত্ত:</p>
+                <ul>
+                    <li>প্রদেয় হিসাব: ৫০</li>
+                    <li>প্রদেয় নোট: ৮,৩০০</li>
+                    <li>মূলধন: ১০,০০০</li>
+                    <li>ডেলিভারি সেবা আয়: <strong>? (নির্ণেয়)</strong></li>
+                </ul>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>গণনার ধাপ</th>
+                            <th class="text-right">টাকা</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>মোট ডেবিট</strong> (৯০০ + ১৫,৫০০ + ৬০০ + ২,০০০ + ৫৫০ + ৬,০০০)</td>
+                            <td class="text-right"><strong>২৫,৫৫০</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>জ্ঞাত ক্রেডিট</strong> (৫০ + ৮,৩০০ + ১০,০০০)</td>
+                            <td class="text-right">১৮,৩৫০</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">হারানো সংখ্যা (মোট ডেবিট - জ্ঞাত ক্রেডিট)</td>
+                            <td class="text-right bold">৭,২০০</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>সুতরাং, <strong>ডেলিভারি সেবা আয়</strong> এর হারানো পরিমাণ হলো <strong>টাকা ৭,২০০</strong>।</p>
+            </div>
+        </div>
+
+        <button class="accordion-button">প্রশ্ন নং ৮ এর উত্তর (এপেক্স কোম্পানি)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>এপেক্স কোম্পানি</h3>
+                <h3>উল্লম্ব বিশ্লেষণ - বিশদ আয় বিবরণী</h3>
+                <h4 style="border:none; margin-bottom: 20px;">২০২৪ এবং ২০২৩ সালের জন্য</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="2" class="text-center">২০২৪</th>
+                            <th colspan="2" class="text-center">২০২৩</th>
+                        </tr>
+                        <tr>
+                            <th>বিবরণ</th>
+                            <th class="text-right">টাকা</th>
+                            <th class="text-right">শতাংশ</th>
+                            <th class="text-right">টাকা</th>
+                            <th class="text-right">শতাংশ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>বিক্রয়</td>
+                            <td class="text-right">৫,৭৫,০০০</td>
+                            <td class="text-right">১০০.০০%</td>
+                            <td class="text-right">৬,৩০,০০০</td>
+                            <td class="text-right">১০০.০০%</td>
+                        </tr>
+                        <tr>
+                            <td>(-) বিক্রীত পণ্যের ব্যয়</td>
+                            <td class="text-right">(৪,৬৬,৫০০)</td>
+                            <td class="text-right">(৮১.১৩%)</td>
+                            <td class="text-right">(৩,৯৫,০০০)</td>
+                            <td class="text-right">(৬২.৭০%)</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">মোট মুনাফা</td>
+                            <td class="text-right bold">১,০৮,৫০০</td>
+                            <td class="text-right bold">১৮.৮৭%</td>
+                            <td class="text-right bold">২,৩৫,০০০</td>
+                            <td class="text-right bold">৩৭.৩০%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><em>(-) পরিচালন ব্যয়:</em></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:30px;">বিক্রয় খরচ</td>
+                            <td class="text-right">(১,২৬,৬০০)</td>
+                            <td class="text-right">(২২.০২%)</td>
+                            <td class="text-right">(৭২,৫০০)</td>
+                            <td class="text-right">(১১.৫১%)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:30px;">প্রশাসনিক খরচ</td>
+                            <td class="text-right">(৭২,০০০)</td>
+                            <td class="text-right">(১২.৫২%)</td>
+                            <td class="text-right">(৫৭,০০০)</td>
+                            <td class="text-right">(৯.০৫%)</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">পরিচালন আয় (ক্ষতি)</td>
+                            <td class="text-right bold">(৯০,১০০)</td>
+                            <td class="text-right bold">(১৫.৬৭%)</td>
+                            <td class="text-right bold">১,০৫,৫০০</td>
+                            <td class="text-right bold">১৬.৭৫%</td>
+                        </tr>
+                        <tr>
+                            <td>(-) আয়কর খরচ</td>
+                            <td class="text-right">(৭৮,৭১০)</td>
+                            <td class="text-right">(১৩.৬৯%)</td>
+                            <td class="text-right">(৩৯,৫৬০)</td>
+                            <td class="text-right">(৬.২৮%)</td>
+                        </tr>
+                        <tr>
+                            <td class="bold double-underline">নীট আয় (ক্ষতি)</td>
+                            <td class="text-right bold double-underline">(১,৬৮,৮১০)</td>
+                            <td class="text-right bold double-underline">(২৯.৩৬%)</td>
+                            <td class="text-right bold double-underline">৬৫,৯৪০</td>
+                            <td class="text-right bold double-underline">১০.৪৭%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <button class="accordion-button">প্রশ্ন নং ৯ এর উত্তর (অনিতা কোম্পানি)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>অনিতা কোম্পানি</h3>
+                <h3>বিক্রীত পণ্যের ব্যয় নির্ণয়</h3>
+                <h4 style="border:none; margin-bottom: 20px;">৩১ ডিসেম্বর, ২০২৪ সমাপ্ত বছরের জন্য</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>বিবরণ</th>
+                            <th class="text-right">টাকা</th>
+                            <th class="text-right">টাকা</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>প্রারম্ভিক মজুদ পণ্য</td>
+                            <td></td>
+                            <td class="text-right">১৭,২০০</td>
+                        </tr>
+                        <tr>
+                            <td>(+) ক্রয়</td>
+                            <td class="text-right">১,৯০,০০০</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(+) ক্রয় পরিবহন (Freight in)</td>
+                            <td class="text-right">১,০০০</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(-) ক্রয় ফেরত ও বাট্টা</td>
+                            <td class="text-right">(৪,০০০)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">নীট ক্রয়</td>
+                            <td></td>
+                            <td class="text-right">১,৮৭,০০০</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">বিক্রয়যোগ্য পণ্যের ব্যয়</td>
+                            <td></td>
+                            <td class="text-right">২,০৪,২০০</td>
+                        </tr>
+                        <tr>
+                            <td>(-) সমাপনী মজুদ পণ্য</td>
+                            <td></td>
+                            <td class="text-right">(২৫,০০০)</td>
+                        </tr>
+                        <tr>
+                            <td class="bold double-underline">বিক্রীত পণ্যের ব্যয়</td>
+                            <td></td>
+                            <td class="text-right bold double-underline">১,৭৯,২০০</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button class="accordion-button">প্রশ্ন নং ১০ এর উত্তর (অ্যান এজেন্সি)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>অ্যান এজেন্সি</h3>
+                
+                <p class="sub-header">i) সারণিবদ্ধ বিশ্লেষণে লেনদেনগুলো দেখাও।</p>
+                <div style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">তারিখ</th>
+                                <th rowspan="2">ব্যাখ্যা</th>
+                                <th colspan="4" class="text-center">সম্পদ</th>
+                                <th class="text-center">=</th>
+                                <th colspan="1" class="text-center">দায়</th>
+                                <th class="text-center">+</th>
+                                <th colspan="2" class="text-center">মালিকানা স্বত্ব</th>
+                            </tr>
+                            <tr>
+                                <th class="text-right">নগদ</th>
+                                <th class="text-right">অফিস সরঞ্জাম</th>
+                                <th class="text-right">অগ্রিম ভাড়া</th>
+                                <th class="text-right">অন্যান্য</th>
+                                <th></th>
+                                <th class="text-right">প্রদেয় হিসাব</th>
+                                <th></th>
+                                <th class="text-right">করিম, মূলধন</th>
+                                <th class="text-right">আয়/ব্যয়</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>জুন ১</td><td>বিনিয়োগ</td><td class="text-right">৫,০০,০০০</td><td></td><td></td><td></td><td>=</td><td></td><td>+</td><td class="text-right">৫,০০,০০০</td><td></td></tr>
+                            <tr><td>জুন ২</td><td>ভাড়া প্রদান</td><td class="text-right">(১,৫০,০০০)</td><td></td><td class="text-right">১,৫০,০০০</td><td></td><td>=</td><td></td><td>+</td><td></td><td></td></tr>
+                            <tr><td>জুন ৫</td><td>সরঞ্জাম ক্রয়</td><td class="text-right">(২,৫০,০০০)</td><td class="text-right">২,৫০,০০০</td><td></td><td></td><td>=</td><td></td><td>+</td><td></td><td></td></tr>
+                            <tr><td>জুন ১০</td><td>বিজ্ঞাপন</td><td></td><td></td><td></td><td></td><td>=</td><td class="text-right">১,০০,০০০</td><td>+</td><td></td><td class="text-right">(১,০০,০০০)<br><sup>(বিজ্ঞাপন খরচ)</sup></td></tr>
+                            <tr><td>জুন ১৪</td><td>সাপ্লাইজ ক্রয়</td><td class="text-right">(৫০,০০০)</td><td></td><td></td><td></td><td>=</td><td></td><td>+</td><td></td><td class="text-right">(৫০,০০০)<br><sup>(সাপ্লাইজ খরচ)</sup></td></tr>
+                            <tr><td>জুন ২০</td><td>উত্তোলন</td><td class="text-right">(২০,০০০)</td><td></td><td></td><td></td><td>=</td><td></td><td>+</td><td class="text-right">-২০,০০০<br><sup>(উত্তোলন)</sup></td><td></td></tr>
+                            <tr><td>জুন ২৩</td><td>বেতন প্রদান</td><td class="text-right">(৮০,০০০)</td><td></td><td></td><td></td><td>=</td><td class="text-right">-৮০,০০০<br><sup>(৮৮,০০০-৮,০০০ বকেয়া)</sup></td><td>+</td><td></td><td class="text-right">(৮৮,০০০)<br><sup>(বেতন খরচ)</sup></td></tr>
+                            <tr><td>জুন ৩০</td><td>সেবা আয়</td><td class="text-right">১,০০,০০০</td><td></td><td></td><td></td><td>=</td><td></td><td>+</td><td></td><td class="text-right">১,০০,০০০<br><sup>(সেবা আয়)</sup></td></tr>
+                            <tr><td>জুন ৩০</td><td>বিল প্রদান</td><td class="text-right">(৩০,০০০)</td><td></td><td></td><td></td><td>=</td><td></td><td>+</td><td></td><td class="text-right">(৩০,০০০)<br><sup>(ইউটিলিটি খরচ)</sup></td></tr>
+                            <tr style="border-top: 2px solid #333; font-weight:bold;">
+                                <td></td>
+                                <td>উদ্বৃত্ত</td>
+                                <td class="text-right">২০,০০০</td>
+                                <td class="text-right">২,৫০,০০০</td>
+                                <td class="text-right">১,৫০,০০০</td>
+                                <td class="text-right">০</td>
+                                <td>=</td>
+                                <td class="text-right">২০,০০০</td>
+                                <td>+</td>
+                                <td class="text-right">৪,৮০,০০০</td>
+                                <td class="text-right">(১,৬৮,০০০)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="sub-header">ii) হিসাব সমীকরণ প্রমাণ করো।</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-center">সম্পদ</th>
+                            <th class="text-center"> = </th>
+                            <th class="text-center">দায় + মালিকানা স্বত্ব</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                            <td>
+                                নগদ: ২০,০০০<br>
+                                অফিস সরঞ্জাম: ২,৫০,০০০<br>
+                                অগ্রিম ভাড়া: ১,৫০,০০০<br>
+                            </td>
+                            <td> = </td>
+                            <td>
+                                <strong>দায়:</strong><br>
+                                <span style="padding-left:15px;">প্রদেয় হিসাব: ২০,০০০</span><br>
+                                <strong>মালিকানা স্বত্ব:</strong><br>
+                                <span style="padding-left:15px;">মূলধন: ৫,০০,০০০</span><br>
+                                <span style="padding-left:15px;">(-) উত্তোলন: (২০,০০০)</span><br>
+                                <span style="padding-left:15px;">(+) আয়: ১,০০,০০০</span><br>
+                                <span style="padding-left:15px;">(-) ব্যয়: (১,০০,০০০+৫০,০০০+৮৮,০০০+৩০,০০০) = (২,৬৮,০০০)</span><br>
+                            </td>
+                        </tr>
+                        <tr class="bold">
+                            <td>মোট সম্পদ = ২০,০০০ + ২,৫০,০০০ + ১,৫০,০০০</td>
+                            <td> = </td>
+                            <td>মোট দায় ও স্বত্ব = ২০,০০০ + (৫,০০,০০০ - ২০,০০০ + ১,০০,০০০ - ২,৬৮,০০০)</td>
+                        </tr>
+                        <tr class="bold">
+                            <td>৪,২০,০০০</td>
+                            <td> = </td>
+                            <td>২০,০০০ + ৪,০০,০০০</td>
+                        </tr>
+                         <tr class="bold double-underline">
+                            <td class="text-center">টাকা ৪,২০,০০০</td>
+                            <td class="text-center"> = </td>
+                            <td class="text-center">টাকা ৪,২০,০০০</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button class="accordion-button">প্রশ্ন নং ১১ এর উত্তর (জেন কেন্ট)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>জেন কেন্ট, সিপিএ</h3>
+                
+                <p class="sub-header">ক) লেনদেনগুলোর জাবেদা দাও</p>
+                <h3>সাধারণ জাবেদা</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>তারিখ</th>
+                            <th>হিসাবের শিরোনাম ও ব্যাখ্যা</th>
+                            <th>খ.পৃ.</th>
+                            <th class="text-right">ডেবিট (টাকা)</th>
+                            <th class="text-right">ক্রেডিট (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>মে ১</td><td>নগদান হিসাব ...................................... ডে.<br><span style="padding-left:20px;">জেন কেন্ট, মূলধন হিসাব ................... ক্রে.</span><br><span style="padding-left:20px;"><em>(মালিক কর্তৃক নগদ বিনিয়োগ)</em></span></td><td></td><td class="text-right">২৫,০০০</td><td class="text-right">২৫,০০০</td></tr>
+                        <tr><td>মে ২</td><td colspan="4"><em>কোনো দাখিলা হবে না (কর্মী নিয়োগ কোনো আর্থিক লেনদেন নয়)।</em></td></tr>
+                        <tr><td>মে ৩</td><td>সাপ্লাইজ হিসাব ..................................... ডে.<br><span style="padding-left:20px;">প্রদেয় হিসাব ...................................... ক্রে.</span><br><span style="padding-left:20px;"><em>(রিড সাপ্লাই থেকে ধারে সাপ্লাইজ ক্রয়)</em></span></td><td></td><td class="text-right">২,৫০০</td><td class="text-right">২,৫০০</td></tr>
+                        <tr><td>মে ৭</td><td>ভাড়া খরচ হিসাব ................................... ডে.<br><span style="padding-left:20px;">নগদান হিসাব ................................... ক্রে.</span><br><span style="padding-left:20px;"><em>(অফিসের ভাড়া প্রদান করা হলো)</em></span></td><td></td><td class="text-right">৯০০</td><td class="text-right">৯০০</td></tr>
+                        <tr><td>মে ১১</td><td>প্রাপ্য হিসাব ......................................... ডে.<br><span style="padding-left:20px;">সেবা আয় হিসাব ................................ ক্রে.</span><br><span style="padding-left:20px;"><em>(সেবা প্রদানের জন্য চালান ইস্যু করা হলো)</em></span></td><td></td><td class="text-right">২,১০০</td><td class="text-right">২,১০০</td></tr>
+                        <tr><td>মে ১২</td><td>নগদান হিসাব ...................................... ডে.<br><span style="padding-left:20px;">অনুপার্জিত সেবা আয় হিসাব ............... ক্রে.</span><br><span style="padding-left:20px;"><em>(ভবিষ্যৎ সেবার জন্য অগ্রিম গ্রহণ)</em></span></td><td></td><td class="text-right">৩,৫০০</td><td class="text-right">৩,৫০০</td></tr>
+                        <tr><td>মে ১৭</td><td>নগদান হিসাব ...................................... ডে.<br><span style="padding-left:20px;">প্রাপ্য হিসাব ..................................... ক্রে.</span><br><span style="padding-left:20px;"><em>(এইচ. আর্নল্ড কোং থেকে পাওনা আদায়)</em></span></td><td></td><td class="text-right">১,২০০</td><td class="text-right">১,২০০</td></tr>
+                        <tr><td>মে ৩১</td><td>প্রদেয় হিসাব ....................................... ডে.<br><span style="padding-left:20px;">নগদান হিসাব ................................... ক্রে.</span><br><span style="padding-left:20px;"><em>(রিড সাপ্লাই কোং কে পাওনা পরিশোধ)</em></span><br><span style="padding-left:20px;"><em>(হিসাব: ২,৫০০ x ৪০%)</em></span></td><td></td><td class="text-right">১,০০০</td><td class="text-right">১,০০০</td></tr>
+                    </tbody>
+                </table>
+                
+                <p class="sub-header">খ) তিন কলাম খতিয়ান প্রস্তুত করো</p>
+                <h3>সাধারণ খতিয়ান</h3>
+                
+                <h4>হিসাব: নগদান</h4>
+                <table><thead><tr><th>তারিখ</th><th>বিবরণ</th><th>জা.পৃ.</th><th class="text-right">ডেবিট</th><th class="text-right">ক্রেডিট</th><th class="text-right">উদ্বৃত্ত/জের</th></tr></thead><tbody>
+                    <tr><td>মে ১</td><td>মূলধন</td><td>জা-১</td><td class="text-right">২৫,০০০</td><td></td><td class="text-right">২৫,০০০</td></tr>
+                    <tr><td>মে ৭</td><td>ভাড়া প্রদান</td><td>জা-১</td><td></td><td class="text-right">৯০০</td><td class="text-right">২৪,১০০</td></tr>
+                    <tr><td>মে ১২</td><td>অগ্রিম গ্রহণ</td><td>জা-১</td><td class="text-right">৩,৫০০</td><td></td><td class="text-right">২৭,৬০০</td></tr>
+                    <tr><td>মে ১৭</td><td>পাওনা আদায়</td><td>জা-১</td><td class="text-right">১,২০০</td><td></td><td class="text-right">২৮,৮০০</td></tr>
+                    <tr><td>মে ৩১</td><td>পাওনা পরিশোধ</td><td>জা-১</td><td></td><td class="text-right">১,০০০</td><td class="text-right bold">২৭,৮০০</td></tr>
+                </tbody></table>
+                
+                <h4>হিসাব: প্রাপ্য হিসাব</h4>
+                <table><thead><tr><th>তারিখ</th><th>বিবরণ</th><th>জা.পৃ.</th><th class="text-right">ডেবিট</th><th class="text-right">ক্রেডিট</th><th class="text-right">উদ্বৃত্ত/জের</th></tr></thead><tbody>
+                    <tr><td>মে ১১</td><td>সেবা আয়</td><td>জা-১</td><td class="text-right">২,১০০</td><td></td><td class="text-right">২,১০০</td></tr>
+                    <tr><td>মে ১৭</td><td>নগদ আদায়</td><td>জা-১</td><td></td><td class="text-right">১,২০০</td><td class="text-right bold">৯০০</td></tr>
+                </tbody></table>
+                
+                <h4>হিসাব: সাপ্লাইজ</h4>
+                <table><thead><tr><th>তারিখ</th><th>বিবরণ</th><th>জা.পৃ.</th><th class="text-right">ডেবিট</th><th class="text-right">ক্রেডিট</th><th class="text-right">উদ্বৃত্ত/জের</th></tr></thead><tbody>
+                    <tr><td>মে ৩</td><td>ধারে ক্রয়</td><td>জা-১</td><td class="text-right">২,৫০০</td><td></td><td class="text-right bold">২,৫০০</td></tr>
+                </tbody></table>
+                
+                <h4>হিসাব: প্রদেয় হিসাব</h4>
+                <table><thead><tr><th>তারিখ</th><th>বিবরণ</th><th>জা.পৃ.</th><th class="text-right">ডেবিট</th><th class="text-right">ক্রেডিট</th><th class="text-right">উদ্বৃত্ত/জের</th></tr></thead><tbody>
+                    <tr><td>মে ৩</td><td>সাপ্লাইজ ক্রয়</td><td>জা-১</td><td></td><td class="text-right">২,৫০০</td><td class="text-right">২,৫০০</td></tr>
+                    <tr><td>মে ৩১</td><td>নগদ পরিশোধ</td><td>জা-১</td><td class="text-right">১,০০০</td><td></td><td class="text-right bold">১,৫০০</td></tr>
+                </tbody></table>
+            </div>
+        </div>
+        
+        <button class="accordion-button">প্রশ্ন নং ১২ এর উত্তর (টমাস ম্যাগনাম)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>টমাস ম্যাগনাম, পি.আই.</h3>
+                <h3>কার্যপত্র</h3>
+                <h4 style="border:none; margin-bottom: 20px;">৩১ মার্চ, ২০২৩ তারিখে সমাপ্ত প্রান্তিকের জন্য</h4>
+                <div style="overflow-x:auto;">
+                 <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">হিসাবের শিরোনাম</th>
+                            <th colspan="2" class="text-center">রেওয়ামিল</th>
+                            <th colspan="2" class="text-center">সমন্বয়</th>
+                            <th colspan="2" class="text-center">সমন্বিত রেওয়ামিল</th>
+                            <th colspan="2" class="text-center">বিশদ আয় বিবরণী</th>
+                            <th colspan="2" class="text-center">আর্থিক অবস্থার বিবরণী</th>
+                        </tr>
+                        <tr>
+                            <th class="text-right">ডে.</th><th class="text-right">ক্রে.</th>
+                            <th class="text-right">ডে.</th><th class="text-right">ক্রে.</th>
+                            <th class="text-right">ডে.</th><th class="text-right">ক্রে.</th>
+                            <th class="text-right">ডে.</th><th class="text-right">ক্রে.</th>
+                            <th class="text-right">ডে.</th><th class="text-right">ক্রে.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>নগদ</td><td class="text-right">১১,৪০০</td><td></td><td></td><td></td><td class="text-right">১১,৪০০</td><td></td><td></td><td></td><td class="text-right">১১,৪০০</td><td></td></tr>
+                        <tr><td>প্রাপ্য হিসাব</td><td class="text-right">৫,৬২০</td><td></td><td class="text-right">(৫) ৫৩০</td><td></td><td class="text-right">৬,১৫০</td><td></td><td></td><td></td><td class="text-right">৬,১৫০</td><td></td></tr>
+                        <tr><td>সাপ্লাইজ</td><td class="text-right">১,০৫০</td><td></td><td></td><td class="text-right">(১) ৬৭০</td><td class="text-right">৩৮০</td><td></td><td></td><td></td><td class="text-right">৩৮০</td><td></td></tr>
+                        <tr><td>অগ্রিম বীমা</td><td class="text-right">২,৪০০</td><td></td><td></td><td class="text-right">(৪) ৬০০</td><td class="text-right">১,৮০০</td><td></td><td></td><td></td><td class="text-right">১,৮০০</td><td></td></tr>
+                        <tr><td>যন্ত্রপাতি</td><td class="text-right">৩০,০০০</td><td></td><td></td><td></td><td class="text-right">৩০,০০০</td><td></td><td></td><td></td><td class="text-right">৩০,০০০</td><td></td></tr>
+                        <tr><td>প্রদেয় নোট</td><td></td><td class="text-right">১০,০০০</td><td></td><td></td><td></td><td class="text-right">১০,০০০</td><td></td><td></td><td></td><td class="text-right">১০,০০০</td></tr>
+                        <tr><td>প্রদেয় হিসাব</td><td></td><td class="text-right">১২,৩৫০</td><td></td><td></td><td></td><td class="text-right">১২,৩৫০</td><td></td><td></td><td></td><td class="text-right">১২,৩৫০</td></tr>
+                        <tr><td>টি. ম্যাগনাম, মূলধন</td><td></td><td class="text-right">২০,০০০</td><td></td><td></td><td></td><td class="text-right">২০,০০০</td><td></td><td></td><td></td><td class="text-right">২০,০০০</td></tr>
+                        <tr><td>টি. ম্যাগনাম, উত্তোলন</td><td class="text-right">৬০০</td><td></td><td></td><td></td><td class="text-right">৬০০</td><td></td><td></td><td></td><td class="text-right">৬০০</td><td></td></tr>
+                        <tr><td>সেবা আয়</td><td></td><td class="text-right">১৩,৬২০</td><td></td><td class="text-right">(৫) ৫৩০</td><td></td><td class="text-right">১৪,১৫০</td><td></td><td class="text-right">১৪,১৫০</td><td></td><td></td></tr>
+                        <tr><td>বেতন খরচ</td><td class="text-right">২,২০০</td><td></td><td></td><td></td><td class="text-right">২,২০০</td><td></td><td class="text-right">২,২০০</td><td></td><td></td><td></td></tr>
+                        <tr><td>ভ্রমণ খরচ</td><td class="text-right">১,৩০০</td><td></td><td></td><td></td><td class="text-right">১,৩০০</td><td></td><td class="text-right">১,৩০০</td><td></td><td></td><td></td></tr>
+                        <tr><td>ভাড়া খরচ</td><td class="text-right">১,২০০</td><td></td><td></td><td></td><td class="text-right">১,২০০</td><td></td><td class="text-right">১,২০০</td><td></td><td></td><td></td></tr>
+                        <tr><td>বিবিধ খরচ</td><td class="text-right">২০০</td><td></td><td></td><td></td><td class="text-right">২০০</td><td></td><td class="text-right">২০০</td><td></td><td></td><td></td></tr>
+                        <tr class="bold"><td></td><td class="text-right" style="border-top:1px solid #333">৫৫,৯৭০</td><td class="text-right" style="border-top:1px solid #333">৫৫,৯৭০</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>সাপ্লাইজ খরচ</td><td></td><td></td><td class="text-right">(১) ৬৭০</td><td></td><td class="text-right">৬৭০</td><td></td><td class="text-right">৬৭০</td><td></td><td></td><td></td></tr>
+                        <tr><td>অবচয় খরচ</td><td></td><td></td><td class="text-right">(২) ১,০০০</td><td></td><td class="text-right">১,০০০</td><td></td><td class="text-right">১,০০০</td><td></td><td></td><td></td></tr>
+                        <tr><td>পুঞ্জীভূত অবচয়</td><td></td><td></td><td></td><td class="text-right">(২) ১,০০০</td><td></td><td class="text-right">১,০০০</td><td></td><td></td><td></td><td class="text-right">১,০০০</td></tr>
+                        <tr><td>সুদ খরচ</td><td></td><td></td><td class="text-right">(৩) ৩০০</td><td></td><td class="text-right">৩০০</td><td></td><td class="text-right">৩০০</td><td></td><td></td><td></td></tr>
+                        <tr><td>বকেয়া সুদ</td><td></td><td></td><td></td><td class="text-right">(৩) ৩০০</td><td></td><td class="text-right">৩০০</td><td></td><td></td><td></td><td class="text-right">৩০০</td></tr>
+                        <tr><td>বীমা খরচ</td><td></td><td></td><td class="text-right">(৪) ৬০০</td><td></td><td class="text-right">৬০০</td><td></td><td class="text-right">৬০০</td><td></td><td></td><td></td></tr>
+                        <tr class="bold"><td></td><td></td><td></td><td class="text-right" style="border-top:1px solid #333; border-bottom:1px solid #333">৩,১০০</td><td class="text-right" style="border-top:1px solid #333; border-bottom:1px solid #333">৩,১০০</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr class="bold"><td>মোট</td><td></td><td></td><td></td><td></td><td class="text-right" style="border-top:1px solid #333">৫৮,৬০০</td><td class="text-right" style="border-top:1px solid #333">৫৮,৬০০</td><td></td><td></td><td></td><td></td></tr>
+                        <tr class="bold"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="text-right" style="border-top:1px solid #333">৭,৪৭০</td><td class="text-right" style="border-top:1px solid #333">১৪,১৫০</td><td></td><td></td></tr>
+                        <tr class="bold"><td>নীট লাভ</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="text-right">৬,৬৮০</td><td></td><td></td><td class="text-right">৬,৬৮০</td></tr>
+                        <tr class="bold"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="text-right double-underline">১৪,১৫০</td><td class="text-right double-underline">১৪,১৫০</td><td class="text-right double-underline">৫১,১৩০</td><td class="text-right double-underline">৫১,১৩০</td></tr>
+                    </tbody>
+                </table>
+               </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const acc = document.getElementsByClassName("accordion-button");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
